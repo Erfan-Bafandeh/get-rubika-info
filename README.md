@@ -1,15 +1,20 @@
 # get-rubika-info
 It's a method or function with python language for get a rubika user info.
 
-## docs:
+# docs:
 
-
-<h2>use this method:<h2/>
-
+#  use this method:
 ```python
 get_rubika_info(url:str)
 ```
 
-output:
+# output:
+## True request:
+```json
+{'ok': True, 'error_msg': None, 'profile': '', 'title': '', 'description': None, 'member_count': 1}
+```
 
-
+## False request:
+```json
+{'ok': False, 'error_msg': 'user or channel not found.'}
+```
