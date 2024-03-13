@@ -1,7 +1,7 @@
 import requests as req
 from bs4 import BeautifulSoup
 
-def get_rubika_user_info(url: str) -> dict:
+def get_rubika_info(url: str) -> dict:
     if url.startswith("https://rubika.ir/"):
         result = {}
         response = req.get(url).text
@@ -24,6 +24,6 @@ def get_rubika_user_info(url: str) -> dict:
             return result
 
 # for example:
-rubika = get_rubika_user_info("https://rubika.ir/Tommy969")
+rubika = get_rubika_info("https://rubika.ir/Tommy969")
 
 print(rubika)
