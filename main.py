@@ -23,6 +23,6 @@ def get_rubika_user_info(url: str) -> dict:
             result["error_msg"] = "user or channel not found."
             return result
 
-rubika = rubika_info("https://rubika.ir/Tommy969")
+rubika = get_rubika_user_info("https://rubika.ir/Tommy969")
 
 print(rubika)
