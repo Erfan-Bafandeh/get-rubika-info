@@ -3,18 +3,18 @@ It's a method or function with python language for get a rubika user info.
 
 # docs:
 
-#  use this method:
+##  use this method:
 ```python
 get_rubika_info(url:str)
 ```
 
 # output:
 ## True request:
-```json
+```
 {'ok': True, 'error_msg': None, 'profile': '', 'title': '', 'description': None, 'member_count': 1}
 ```
 
 ## False request:
-```json
+```
 {'ok': False, 'error_msg': 'user or channel not found.'}
 ```
